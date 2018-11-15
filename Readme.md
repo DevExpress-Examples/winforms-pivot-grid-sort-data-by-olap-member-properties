@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/WinFormsPivotGridCustomOLAPSort/Form1.cs) (VB: [Form1.vb](./VB/WinFormsPivotGridCustomOLAPSort/Form1.vb))
+<!-- default file list end -->
 # How to sort the pivot grid's data by OLAP member properties
 
 
