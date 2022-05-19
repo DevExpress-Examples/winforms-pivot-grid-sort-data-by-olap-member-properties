@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding1 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
             DevExpress.XtraPivotGrid.PivotGridGroup pivotGridGroup1 = new DevExpress.XtraPivotGrid.PivotGridGroup();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding2 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding3 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
             this.fieldFiscalYear = new DevExpress.XtraPivotGrid.PivotGridField();
             this.pivotGridControl1 = new DevExpress.XtraPivotGrid.PivotGridControl();
             this.fieldSalesAmount = new DevExpress.XtraPivotGrid.PivotGridField();
@@ -41,8 +44,9 @@
             this.fieldFiscalYear.Area = DevExpress.XtraPivotGrid.PivotArea.ColumnArea;
             this.fieldFiscalYear.AreaIndex = 0;
             this.fieldFiscalYear.Caption = "Year";
+            dataSourceColumnBinding1.ColumnName = "[Date].[Fiscal].[Fiscal Year]";
+            this.fieldFiscalYear.DataBinding = dataSourceColumnBinding1;
             this.fieldFiscalYear.DisplayFolder = "Fiscal";
-            this.fieldFiscalYear.FieldName = "[Date].[Fiscal].[Fiscal Year]";
             this.fieldFiscalYear.Name = "fieldFiscalYear";
             // 
             // pivotGridControl1
@@ -55,7 +59,6 @@
             pivotGridGroup1.Caption = "Date.Fiscal";
             pivotGridGroup1.Fields.Add(this.fieldFiscalYear);
             pivotGridGroup1.Hierarchy = "[Date].[Fiscal]";
-            pivotGridGroup1.ShowNewValues = true;
             this.pivotGridControl1.Groups.AddRange(new DevExpress.XtraPivotGrid.PivotGridGroup[] {
             pivotGridGroup1});
             this.pivotGridControl1.Location = new System.Drawing.Point(0, 0);
@@ -74,8 +77,9 @@
             this.fieldSalesAmount.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea;
             this.fieldSalesAmount.AreaIndex = 0;
             this.fieldSalesAmount.Caption = "Sales Amount";
+            dataSourceColumnBinding2.ColumnName = "[Measures].[Sales Amount]";
+            this.fieldSalesAmount.DataBinding = dataSourceColumnBinding2;
             this.fieldSalesAmount.DisplayFolder = "Sales Summary";
-            this.fieldSalesAmount.FieldName = "[Measures].[Sales Amount]";
             this.fieldSalesAmount.Name = "fieldSalesAmount";
             // 
             // fieldProduct
@@ -83,7 +87,8 @@
             this.fieldProduct.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
             this.fieldProduct.AreaIndex = 0;
             this.fieldProduct.Caption = "Product";
-            this.fieldProduct.FieldName = "[Product].[Product].[Product]";
+            dataSourceColumnBinding3.ColumnName = "[Product].[Product].[Product]";
+            this.fieldProduct.DataBinding = dataSourceColumnBinding3;
             this.fieldProduct.Name = "fieldProduct";
             this.fieldProduct.Width = 200;
             // 
