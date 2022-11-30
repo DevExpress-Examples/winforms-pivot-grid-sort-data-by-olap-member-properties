@@ -22,8 +22,7 @@ namespace WinFormsPivotGridCustomOLAPSort {
 
         private void pivotGridControl1_CustomServerModeSort(object sender, 
             CustomServerModeSortEventArgs e) {
-            if (e.Field == fieldProduct)
-            {
+            if (e.Field == fieldProduct) {
                 // Sets the result of comparing the "Product" field's values 
                 // by the "Color" OLAP member property.
                 e.Result = Comparer.Default.Compare(
