@@ -3,17 +3,25 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T264133)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
-* [Form1.cs](./CS/WinFormsPivotGridCustomOLAPSort/Form1.cs) (VB: [Form1.vb](./VB/WinFormsPivotGridCustomOLAPSort/Form1.vb))
-<!-- default file list end -->
-# How to sort the pivot grid's data by OLAP member properties
+# Pivot Grid for WinForms - Custom Sorting in OLAP
 
+This example demonstrates how to handle [CustomServerModeSort](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.PivotGridControl.CustomServerModeSort?v=22.2) event to sort data by OLAP member properties.
 
-This example demonstrates how to sort data by OLAP member properties using the <a href="https://documentation.devexpress.com/#WindowsForms/DevExpressXtraPivotGridPivotGridControl_CustomServerModeSorttopic">CustomServerModeSort</a> event. In this example, the "Product" field's values are sorted by the "List Price" OLAP member property.  The "List Price" member property values are displayed near the Products field values.<br />
-<p>Note that this sample demonstrates how to sort data manually using the <a href="https://documentation.devexpress.com/#WindowsForms/DevExpressXtraPivotGridPivotGridControl_CustomServerModeSorttopic">CustomServerModeSort</a> event. If you want to sort data by an attribute value, use the <a href="https://documentation.devexpress.com/#CoreLibraries/DevExpressXtraPivotGridPivotGridFieldBase_SortByAttributetopic">PivotGridFieldBase.SortByAttribute</a> property instead.</p>
+![Pivot Grid](./images/chart.png)
 
-<br/>
+In this example, the _Product_ field values are sorted by the "List Price" OLAP member property. The "List Price" member property values are displayed near the _Products_ field values.
+
+## Files to Review 
+
+[Form1.cs](./CS/WinFormsPivotGridCustomOLAPSort/Form1.cs) (VB: [Form1.vb](./VB/WinFormsPivotGridCustomOLAPSort/Form1.vb))
+
+## Documentation
+
+[Sorting Data](https://docs.devexpress.com/WindowsForms/1952/controls-and-libraries/pivot-grid/data-shaping/sorting/sorting-data)
+
+## More Examples 
+
+[Pivot Grid for WinForms - How to Use a Hidden Field to Sort the Visible Field Values](https://github.com/DevExpress-Examples/winforms-pivot-grid-use-a-hidden-field-to-sort-visible-field-values)
 
 
