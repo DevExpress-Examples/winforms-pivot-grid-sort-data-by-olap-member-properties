@@ -28,39 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding1 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
-            DevExpress.XtraPivotGrid.PivotGridGroup pivotGridGroup1 = new DevExpress.XtraPivotGrid.PivotGridGroup();
-            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding2 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
-            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding3 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
-            this.fieldFiscalYear = new DevExpress.XtraPivotGrid.PivotGridField();
-            this.pivotGridControl1 = new DevExpress.XtraPivotGrid.PivotGridControl();
-            this.fieldSalesAmount = new DevExpress.XtraPivotGrid.PivotGridField();
             this.fieldProduct = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.pivotGridControl1 = new DevExpress.XtraPivotGrid.PivotGridControl();
+            this.fieldInternetSalesAmount = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.fieldFiscalYear = new DevExpress.XtraPivotGrid.PivotGridField();
             ((System.ComponentModel.ISupportInitialize)(this.pivotGridControl1)).BeginInit();
             this.SuspendLayout();
             // 
-            // fieldFiscalYear
+            // fieldProduct
             // 
-            this.fieldFiscalYear.Area = DevExpress.XtraPivotGrid.PivotArea.ColumnArea;
-            this.fieldFiscalYear.AreaIndex = 0;
-            this.fieldFiscalYear.Caption = "Year";
-            dataSourceColumnBinding1.ColumnName = "[Date].[Fiscal].[Fiscal Year]";
-            this.fieldFiscalYear.DataBinding = dataSourceColumnBinding1;
-            this.fieldFiscalYear.DisplayFolder = "Fiscal";
-            this.fieldFiscalYear.Name = "fieldFiscalYear";
+            this.fieldProduct.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
+            this.fieldProduct.AreaIndex = 0;
+            this.fieldProduct.Caption = "Product";
+            this.fieldProduct.FieldName = "[Product].[Product].[Product]";
+            this.fieldProduct.Name = "fieldProduct";
             // 
             // pivotGridControl1
             // 
             this.pivotGridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pivotGridControl1.Fields.AddRange(new DevExpress.XtraPivotGrid.PivotGridField[] {
-            this.fieldSalesAmount,
-            this.fieldProduct,
-            this.fieldFiscalYear});
-            pivotGridGroup1.Caption = "Date.Fiscal";
-            pivotGridGroup1.Fields.Add(this.fieldFiscalYear);
-            pivotGridGroup1.Hierarchy = "[Date].[Fiscal]";
-            this.pivotGridControl1.Groups.AddRange(new DevExpress.XtraPivotGrid.PivotGridGroup[] {
-            pivotGridGroup1});
+            this.fieldInternetSalesAmount,
+            this.fieldFiscalYear,
+            this.fieldProduct});
             this.pivotGridControl1.Location = new System.Drawing.Point(0, 0);
             this.pivotGridControl1.Name = "pivotGridControl1";
             this.pivotGridControl1.OLAPConnectionString = "provider=MSOLAP;data source=http://demos.devexpress.com/Services/OLAP/msmdpump.dl" +
@@ -72,25 +61,23 @@
             this.pivotGridControl1.CustomServerModeSort += new System.EventHandler<DevExpress.XtraPivotGrid.CustomServerModeSortEventArgs>(this.pivotGridControl1_CustomServerModeSort);
             this.pivotGridControl1.FieldValueDisplayText += new DevExpress.XtraPivotGrid.PivotFieldDisplayTextEventHandler(this.pivotGridControl1_FieldValueDisplayText);
             // 
-            // fieldSalesAmount
+            // fieldInternetSalesAmount
             // 
-            this.fieldSalesAmount.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea;
-            this.fieldSalesAmount.AreaIndex = 0;
-            this.fieldSalesAmount.Caption = "Sales Amount";
-            dataSourceColumnBinding2.ColumnName = "[Measures].[Sales Amount]";
-            this.fieldSalesAmount.DataBinding = dataSourceColumnBinding2;
-            this.fieldSalesAmount.DisplayFolder = "Sales Summary";
-            this.fieldSalesAmount.Name = "fieldSalesAmount";
+            this.fieldInternetSalesAmount.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea;
+            this.fieldInternetSalesAmount.AreaIndex = 0;
+            this.fieldInternetSalesAmount.Caption = "Internet Sales Amount";
+            this.fieldInternetSalesAmount.DisplayFolder = "Internet Sales";
+            this.fieldInternetSalesAmount.FieldName = "[Measures].[Internet Sales Amount]";
+            this.fieldInternetSalesAmount.Name = "fieldInternetSalesAmount";
             // 
-            // fieldProduct
+            // fieldFiscalYear
             // 
-            this.fieldProduct.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
-            this.fieldProduct.AreaIndex = 0;
-            this.fieldProduct.Caption = "Product";
-            dataSourceColumnBinding3.ColumnName = "[Product].[Product].[Product]";
-            this.fieldProduct.DataBinding = dataSourceColumnBinding3;
-            this.fieldProduct.Name = "fieldProduct";
-            this.fieldProduct.Width = 200;
+            this.fieldFiscalYear.Area = DevExpress.XtraPivotGrid.PivotArea.ColumnArea;
+            this.fieldFiscalYear.AreaIndex = 0;
+            this.fieldFiscalYear.Caption = "Fiscal Year";
+            this.fieldFiscalYear.DisplayFolder = "Fiscal";
+            this.fieldFiscalYear.FieldName = "[Date].[Fiscal Year].[Fiscal Year]";
+            this.fieldFiscalYear.Name = "fieldFiscalYear";
             // 
             // Form1
             // 
@@ -108,9 +95,9 @@
         #endregion
 
         private DevExpress.XtraPivotGrid.PivotGridControl pivotGridControl1;
-        private DevExpress.XtraPivotGrid.PivotGridField fieldSalesAmount;
-        private DevExpress.XtraPivotGrid.PivotGridField fieldProduct;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldInternetSalesAmount;
         private DevExpress.XtraPivotGrid.PivotGridField fieldFiscalYear;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldProduct;
     }
 }
 
