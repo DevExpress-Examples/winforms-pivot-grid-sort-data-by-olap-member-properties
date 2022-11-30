@@ -35,8 +35,7 @@ namespace WinFormsPivotGridCustomOLAPSort {
 
         private void pivotGridControl1_FieldValueDisplayText(object sender,
             PivotFieldDisplayTextEventArgs e) {
-            if (e.Field == fieldProduct)
-            {
+            if (e.Field == fieldProduct) {
                 IOLAPMember currentMember =
                    e.Field.GetOLAPMembers().First(m => Object.Equals(m.Value, e.Value));
                 e.DisplayText +=
