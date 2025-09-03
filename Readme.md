@@ -7,7 +7,7 @@
 
 # Pivot Grid for WinForms - Custom Sorting in OLAP
 
-This example demonstrates how to handle the [CustomServerModeSort](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.PivotGridControl.CustomServerModeSort?v=22.2) event to sort data by [e.OLAPMember](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPivotGrid.CustomServerModeSortEventArgsBase-1.OLAPMember1?v=22.2) properties.
+This example demonstrates how to handle the [CustomServerModeSort](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.PivotGridControl.CustomServerModeSort) event to sort data by [e.OLAPMember](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPivotGrid.CustomServerModeSortEventArgsBase-1.OLAPMember1) properties.
 
 ![Pivot Grid](./images/chart.png)
 
@@ -33,3 +33,4 @@ In this example, the _Product_ field values are sorted by the "List Price" OLAP 
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
