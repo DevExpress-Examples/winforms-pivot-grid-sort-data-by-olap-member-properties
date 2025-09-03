@@ -25,7 +25,6 @@ In this example, the _Product_ field values are sorted by the "List Price" OLAP 
 
 [Pivot Grid for WinForms - How to Use a Hidden Field to Sort the Visible Field Values](https://github.com/DevExpress-Examples/winforms-pivot-grid-use-a-hidden-field-to-sort-visible-field-values)
 
-
 <!-- feedback -->
 ## Does this example address your development requirements/objectives?
 
@@ -33,4 +32,5 @@ In this example, the _Product_ field values are sorted by the "List Price" OLAP 
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
 
