@@ -46,7 +46,7 @@ Namespace WinFormsPivotGridCustomOLAPSort
             Me.pivotGridControl1.Fields.AddRange(New DevExpress.XtraPivotGrid.PivotGridField() {Me.fieldInternetSalesAmount, Me.fieldFiscalYear, Me.fieldProduct})
             Me.pivotGridControl1.Location = New System.Drawing.Point(0, 0)
             Me.pivotGridControl1.Name = "pivotGridControl1"
-            Me.pivotGridControl1.OLAPConnectionString = "provider=MSOLAP;data source=http://demos.devexpress.com/Services/OLAP/msmdpump.dl" & "l;initial catalog=""Adventure Works DW Standard Edition"";cube name=""Adventure Wor" & "ks"""
+            Me.pivotGridControl1.OLAPConnectionString = "provider=MSOLAP;data source=https://demos.devexpress.com/Services/OLAP/msmdpump.dl" & "l;initial catalog=""Adventure Works DW Standard Edition"";cube name=""Adventure Wor" & "ks"""
             Me.pivotGridControl1.OLAPDataProvider = DevExpress.XtraPivotGrid.OLAPDataProvider.Adomd
             Me.pivotGridControl1.Size = New System.Drawing.Size(719, 466)
             Me.pivotGridControl1.TabIndex = 0
